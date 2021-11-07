@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    StockFolio
+{% endblock %}
+
+{% block main %}
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Shares</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in shares %}
+                    <tr>
+                        <td>{{ stock["symbol"] }}</td>
+                        <td>{{ stock["Name"] }}</td>
+                        <td>{{ stock["Shares"] }}</td>
+                        <td>{{ stock["Price"] }}</td>
+                        <td>{{ stock["Total"] }}</td>
+                    </tr>
+                {% endfor %}
+                    <tr>
+                        <td><strong>VALUE</strong></td>
+                        <td colspan="3"></td>
+                        <td><strong>{{ value }}</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CASH</strong></td>
+                        <td colspan="3"></td>
+                        <td>{{ cash }}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>GRAND TOTAL</strong></td>
+                        <td colspan="3"></td>
+                        <td><strong>{{ grand_total }}</strong></td>
+                    </tr>
+                </tfoot>
+        </table>
+
+   </div>
+
+{% endblock %}

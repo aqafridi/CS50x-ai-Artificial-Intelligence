@@ -1,0 +1,147 @@
+h1 {
+	color: black;
+    font-family: "Helvetica Neue", serif;
+	font-size: 30px;
+    font-weight: 200;
+	text-decoration: none;
+}
+
+#intro {
+    padding-top: 80px;
+}
+
+h2 {
+	color: gray;
+    font-family: "Helvetica Neue", serif;
+	font-size: 25px;
+    font-weight: 200;
+	text-decoration: none;
+}
+
+.intro {
+    margin-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.timelinetitle {
+    margin: auto;
+    padding-top: 100px;
+}
+
+body {
+	color: #333;
+	font-family: "Helvetica Neue", serif;
+	margin: 0 auto;
+	max-width: 1536px;
+}
+
+/*CAROUSEL*/
+.carousel {
+    width:768px;
+    height:432px;
+    margin: auto;
+  }
+
+.carousel-img {
+    width:768px;
+    height:432px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+ .carousel .item {
+    width:640px;
+    height:360px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height:360px;
+}
+
+#intro-img {
+    display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    padding: 10px;
+}
+
+p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+  ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+  ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+  ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/*NAVIGATION*/
+.nav-item {
+    font-weight: 200;
+    font-stretch: extra-expanded;
+    font-size: 20px;
+}
+
+/*CULTURE CARDS*/
+.card {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+/*FOOD*/
+.food {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.foodimg {
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+}
